@@ -7,7 +7,7 @@ if (
 ) {
   baseURL = process.env.REACT_APP_API_BASE_URL;
 } else {
-  baseURL = "http://127.0.0.1:8000";
+  baseURL = "https://techis-students-backend.herokuapp.com/students/";
 }
 
 const api = axios.create({
