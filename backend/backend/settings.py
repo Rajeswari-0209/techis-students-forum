@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-oa6g#i___)slnwiz4v*91!l!57wym5&_#3ovzd3iw9uva2!l)$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
@@ -87,16 +87,16 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd4loed1s6ih1do',
-        'HOST' :'ec2-34-230-115-172.compute-1.amazonaws.com',
-        'PORT' : 5432,
-        'USER' : 'vwjowcfxncjvpe',
-        'PASSWORD' : '564ffd513ad3753e80e9b707b2b7ae705d0c096d449e0def7a6bd24f80d119c8'
-
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'd4loed1s6ih1do',
+        # 'HOST' :'ec2-34-230-115-172.compute-1.amazonaws.com',
+        # 'PORT' : 5432,
+        # 'USER' : 'vwjowcfxncjvpe',
+        # 'PASSWORD' : '564ffd513ad3753e80e9b707b2b7ae705d0c096d449e0def7a6bd24f80d119c8'
+    }
     
 }
 
