@@ -5,9 +5,10 @@ if (
   process.env.REACT_APP_ENVIRONMENT &&
   process.env.REACT_APP_ENVIRONMENT === "PRODUCTION"
 ) {
-  baseURL = process.env.REACT_APP_API_BASE_URL;
+  // baseURL = process.env.REACT_APP_API_BASE_URL;
+  baseURL = "https://techis-students-backend.herokuapp.com";
 } else {
-  baseURL = "https://techis-students-backend.herokuapp.com/students/";
+  baseURL = "http://127.0.0.1:8000";
 }
 
 const api = axios.create({

@@ -85,21 +85,26 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+# Heroku datbase
+# DATABASES = {
+#     'default': {
+       
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd6tfgb8k4c9k2g',
+#         'HOST' :'ec2-34-193-113-223.compute-1.amazonaws.com',
+#         'PORT' : 5432,
+#         'USER' : 'dplybkabufoxly',
+#         'PASSWORD' : 'c85bcb2b4b014ae8831eb072af64e4f781bd431c92b56f849b717682221a4713'
+#     }
+    
+# }
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd6tfgb8k4c9k2g',
-        'HOST' :'ec2-34-193-113-223.compute-1.amazonaws.com',
-        'PORT' : 5432,
-        'USER' : 'dplybkabufoxly',
-        'PASSWORD' : 'c85bcb2b4b014ae8831eb072af64e4f781bd431c92b56f849b717682221a4713'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
     
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
